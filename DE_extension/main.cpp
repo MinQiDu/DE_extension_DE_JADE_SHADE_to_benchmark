@@ -1,3 +1,4 @@
+#include "DE.h"
 #include "JADE.h"
 #include "SHADE.h"
 #include <string>
@@ -48,7 +49,15 @@ int main(int argc, char* argv[])
 	{
 		canrun = 1;
 
-		if (algo_type == "JADE")
+		if (algo_type == "DE")
+		{
+			cout << "algo_type = " << algo_type << " | func_id = " << func_id << " | iter = " << iter << " | dim = " << dim << " | pop_size = " << pop_size <<
+				" | CR = " << mCR << " | F = " << mF << endl;
+			algo_DE algo;
+			algo.RunALG(iter, dim, pop_size, mCR, mF, func_id);
+		}
+
+		else if (algo_type == "JADE")
 		{
 			cout << "algo_type = " << algo_type << " | func_id = " << func_id << " | iter = " << iter << " | dim = " << dim << " | pop_size = " << pop_size <<
 				" | mCR = " << mCR << " | mF = " << mF << " | c = " << c << " | p = " << p << " | w/o archive list = " << (archive_flag ? "true" : "false") << endl;
