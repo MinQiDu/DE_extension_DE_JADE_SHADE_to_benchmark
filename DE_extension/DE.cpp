@@ -20,7 +20,8 @@ void algo_DE::RunALG(int _iter, int _dim, int _pop_size, double _CR, double _F, 
 	int run = 50; // 設定運行次數
 	vector<double> best_fit_record; // 用於記錄每次運行的最佳 fitness
 	best_fit_record.reserve(run);
-	iter_fit_record.resize(run);
+	//iter_fit_record.resize(run);
+	eva_fit_record.resize(_iter * _pop_size); // 用於記錄每次運行的 evaluation fitness
 
 	for (int r = 0; r < run; ++r)
 	{
@@ -31,12 +32,14 @@ void algo_DE::RunALG(int _iter, int _dim, int _pop_size, double _CR, double _F, 
 		F = _F;
 		func_id = _func_id;
 
-		Init(); // 初始化群體解
+		Init();					 // 初始化群體解
 
-		nfes = 0; // 初始化評估次數
+		nfes = 0;				 // 初始化評估次數
 		mnfes = iter * pop_size; // 最大評估次數
 
-		iter_fit_record[r].reserve(iter); // 為每次運行的 fitness 紀錄分配空間
+		//iter_fit_record[r].reserve(iter); // 為每次運行的 fitness 紀錄分配空間
+		eva_fit_record[r].reserve(mnfes);   // 為每次運行的 evaluation fitness 紀錄分配空間
+		current_run = r;					// 記錄當前運行次數，供 Determination() 紀錄使用
 
 		while (nfes < mnfes)
 		{
@@ -45,8 +48,7 @@ void algo_DE::RunALG(int _iter, int _dim, int _pop_size, double _CR, double _F, 
 			Evaluation(); // 計算current解的fitness
 			Determination(); // 更新下一代解
 
-			iter_fit_record[r].push_back(best_fit); // 紀錄當前迭代的最佳 fitness
-			//iter_c++; // 增加當前迭代次數
+			//iter_fit_record[r].push_back(best_fit); // 紀錄當前迭代的最佳 fitness
 		}
 		best_fit_record.push_back(best_fit); // 記錄所有 run 運行的最佳 fitness
 		/*cout << "best fitness in run " << (r + 1) << ": " << best_fit << endl;
@@ -56,14 +58,19 @@ void algo_DE::RunALG(int _iter, int _dim, int _pop_size, double _CR, double _F, 
 		}
 		cout << endl;*/
 	}
-
+	// 顯示 eva_fit_record 
+	/*std::cout << eva_fit_record[current_run].size() << " evaluations recorded for run " << current_run + 1 << std::endl;
+	for (const auto& fit : eva_fit_record[current_run]) {
+		std::cout << fit << " ";
+	}*/
 	// 輸出結果
 	double avg_best_fit = accumulate(best_fit_record.begin(), best_fit_record.end(), 0.0) / run;
-	cout << "Avg Best fitness: " << avg_best_fit << endl;
+	std::cout << "Avg Best fitness: " << avg_best_fit << endl;
 	// 輸出到檔案
 	FileOutput(
+		run,
 		best_fit_record,
-		iter_fit_record,
+		eva_fit_record,
 		func_id,
 		iter,
 		dim,
@@ -191,6 +198,7 @@ void algo_DE::Determination()
 				best_sol = current_pop[i];
 			}
 		}
+		eva_fit_record[current_run].push_back(best_fit); // 記錄每次evaluation time的最佳解
 	}
 }
 	//cout << "sF size: " << sF.size() << ", sCR size: " << sCR.size() << endl;

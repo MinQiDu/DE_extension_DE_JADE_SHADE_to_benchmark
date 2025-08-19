@@ -82,9 +82,25 @@ double Benchmark::Evaluate(const vector<double>& x) const // Evaluate the benchm
 
     case 8: // Schwefel 2.26
         sum = 0.0;
-        for (int i = 0; i < D; ++i)
-            sum += x[i] * sin(sqrt(fabs(x[i])));
-        return 418.98288727243369 * D - sum; //418.98288727243369
+        //for (int i = 0; i < D; ++i)
+        //    sum += x[i] * sin(sqrt(fabs(x[i])));
+        //return 418.98288727243369 * D - sum; //418.98288727243369
+        for (int i = 0; i < D; ++i)  
+        {  
+            double shifted_x = x[i] + 4.209687462275036e+002; // Create a shifted copy of x[i]  
+            if (shifted_x > 500) {  
+                sum -= (500.0 - fmod(shifted_x, 500)) * sin(sqrt(500.0 - fmod(shifted_x, 500)));  
+                double tmp = (shifted_x - 500.0) / 100;  
+                sum += tmp * tmp / D;  
+            } else if (shifted_x < -500) {  
+                sum -= (-500.0 + fmod(fabs(shifted_x), 500)) * sin(sqrt(500.0 - fmod(fabs(shifted_x), 500)));  
+                double tmp = (shifted_x + 500.0) / 100;  
+                sum += tmp * tmp / D;  
+            } else {  
+                sum -= shifted_x * sin(sqrt(fabs(shifted_x)));  
+            }  
+        }
+		return sum + 4.189828872724338e+002 * D; //418.98288727243369 * D;
 
     case 9: // Rastrigin
         for (const double xi : x)

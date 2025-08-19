@@ -1,5 +1,5 @@
 SHADE | func_id = 5 | iter = 3000 | dim = 30 | pop_size = 100 | mCR = 0.5 | mF = 0.5 | MCR & MF size = 100 | p = 0.05 | w/o archive list = true
-Avg Best fitness: 0
+Avg Best fitness: 0.0797325
  | Best fitness run 1: 0
  | Best fitness run 2: 0
  | Best fitness run 3: 0
@@ -8,8 +8,8 @@ Avg Best fitness: 0
  | Best fitness run 6: 0
  | Best fitness run 7: 0
  | Best fitness run 8: 0
- | Best fitness run 9: 0
- | Best fitness run 10: 0
+ | Best fitness run 9: 9.1212e-30
+ | Best fitness run 10: 3.98662
  | Best fitness run 11: 0
  | Best fitness run 12: 0
  | Best fitness run 13: 0

@@ -5,14 +5,12 @@
 #include <iostream>
 
 void FileOutput(
+	const int run,
 	const vector<double>& best_fit_record,
-	const vector<vector<double>>& iter_fit_record,
+	const vector<vector<double>>& eva_fit_record,
 	int func_id, int iter, int dim, int pop_size,
 	double _CR, double _F, double avg_best_fit
 ) {
-	// ===== 這裡可以計算 run 數量 =====
-	int run = (int)iter_fit_record.size();        // 外層數量 = run
-
 	// ===== 在這裡填入你產生 .txt 的程式碼 =====
 	// 輸出每 run 運行的最佳 fitness 到 DE_fitness_func_iter_dim.txt
 	ofstream output_file("DE_fitness_func" + to_string(func_id) + "_iter" + to_string(iter) + "_dim" + to_string(dim) + ".txt", ios::out);
@@ -89,11 +87,11 @@ void FileOutput(
 	}
 	
 	// 計算所有 run 每一個 iteration 的平均值
-	int max_iter = iter_fit_record[0].size();
-	for (int t = 0; t < max_iter; ++t) {
+	int max_eva = eva_fit_record[0].size();
+	for (int t = 0; t < max_eva; ++t) {
 		double sum = 0.0;
 		for (int r = 0; r < run; ++r) {
-			sum += iter_fit_record[r][t];
+			sum += eva_fit_record[r][t];
 		}
 		avg_cvg_file << sum / run << "\n";
 	}
@@ -108,7 +106,7 @@ void FileOutput(
 	avg_plot_file << "set terminal pngcairo size 1200,600 enhanced font 'Verdana,10'\n";
 	avg_plot_file << "set output 'DE_avg_cvg_plot" << "_func" << func_id << "_iter" << iter << "_dim" << dim << ".png'\n";
 	avg_plot_file << "set title 'DE Average Convergence Plot" << " (f" << func_id << ", iter" << iter << ", dim" << dim << ")'\n";
-	avg_plot_file << "set xlabel 'Iteration'\n";
+	avg_plot_file << "set xlabel 'Evaluation times'\n";
 	avg_plot_file << "set ylabel 'Average Best Fitness'\n";
 	avg_plot_file << "set grid\n";
 	avg_plot_file << "set label 'Avg best fitness: " << avg_best_fit << "' at graph 0.02, graph 0.95 font ',10' tc rgb 'black'\n";

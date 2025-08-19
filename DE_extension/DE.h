@@ -33,7 +33,9 @@ private:
 
 	double lower_bound, upper_bound;    /* 不同函數對應的上下界 */
 
-	vector<vector<double>> iter_fit_record;  /* 輸出每一 run fitness 收斂結果用 */
+	//vector<vector<double>> iter_fit_record;  /* 輸出每一 run fitness 收斂結果用 */
+	vector<vector<double>> eva_fit_record; /* 輸出每一 run 每次evaluation fitness 收斂結果用 */
+	int current_run;					   /* 當前運行 run 數 */
 
 	void Init();           /* 產生初始dim*pop_size個群體解 */
 	void Mutation();       /* 產生donor解 */
