@@ -15,25 +15,9 @@ algo_SHADE::algo_SHADE()
 {
 }
 
-//void FileOutput(
-//	const int run,
-//	const vector<double>& best_fit_record,
-//	const vector<vector<double>>& eva_fit_record,
-//	int func_id,
-//	int iter,
-//	int dim,
-//	int pop_size,
-//	double _mCR,
-//	double _mF,
-//	int H,
-//	double p,
-//	bool archive_flag,
-//	double avg_best_fit
-//);
-
 void algo_SHADE::RunALG(int _iter, int _dim, int _pop_size, double _mCR, double _mF, double _H, double _p, int _func_id, bool _archive_flag)
 {
-	int run = 50; // 設定運行次數
+	int run = 51; // 設定運行次數
 	vector<double> best_fit_record; // 用於記錄每次運行的最佳 fitness
 	best_fit_record.reserve(run);
 	//iter_fit_record.resize(run);

@@ -22,6 +22,7 @@
     <ClCompile Include="benchmark.cpp" />
     <ClCompile Include="DE.cpp" />
     <ClCompile Include="JADE.cpp" />
+    <ClCompile Include="LSHADE.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="SHADE.cpp" />
   </ItemGroup>
@@ -31,6 +32,8 @@
     <ClInclude Include="DE_fileoutput.h" />
     <ClInclude Include="JADE.h" />
     <ClInclude Include="JADE_fileoutput.h" />
+    <ClInclude Include="LSHADE.h" />
+    <ClInclude Include="LSHADE_fileoutput.h" />
     <ClInclude Include="SHADE.h" />
     <ClInclude Include="SHADE_fileoutput.h" />
   </ItemGroup>

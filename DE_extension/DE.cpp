@@ -17,7 +17,7 @@ algo_DE::algo_DE()
 
 void algo_DE::RunALG(int _iter, int _dim, int _pop_size, double _CR, double _F, int _func_id)
 {
-	int run = 50; // 設定運行次數
+	int run = 51; // 設定運行次數
 	vector<double> best_fit_record; // 用於記錄每次運行的最佳 fitness
 	best_fit_record.reserve(run);
 	//iter_fit_record.resize(run);
@@ -165,6 +165,20 @@ void algo_DE::Crossover()
 			{
 				current_pop[i][j] = pop[i][j];       /* 否則維持原解 */
 			}
+			// reflective boundary condition
+			if (current_pop[i][j] < lower_bound) {
+				current_pop[i][j] = lower_bound + (lower_bound - current_pop[i][j]);
+				if (current_pop[i][j] > upper_bound) current_pop[i][j] = lower_bound;
+			}
+			else if (current_pop[i][j] > upper_bound) {
+				current_pop[i][j] = upper_bound - (current_pop[i][j] - upper_bound);
+				if (current_pop[i][j] < lower_bound) current_pop[i][j] = upper_bound;
+			}
+
+			//// jitter
+			//if (fabs(donor_pop[i][j] - lower_bound) < 1e-8 || fabs(donor_pop[i][j] - upper_bound) < 1e-8) {
+			//	donor_pop[i][j] += (upper_bound - lower_bound) * 0.01 * (2.0 * dist_CR(gen) - 1.0); // small random step
+			//}
 		}
 	}
 }
