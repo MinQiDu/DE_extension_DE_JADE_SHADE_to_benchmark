@@ -4,14 +4,14 @@
 #include <fstream>
 #include <iostream>
 
-void FileOutput(
+void DE_FileOutput(
 	const int run,
 	const vector<double>& best_fit_record,
 	const vector<vector<double>>& eva_fit_record,
 	int func_id, int iter, int dim, int pop_size,
 	double _CR, double _F, double avg_best_fit
 ) {
-	// ===== 在這裡填入你產生 .txt 的程式碼 =====
+	// ===== 產生 .txt 的程式碼 =====
 	// 輸出每 run 運行的最佳 fitness 到 DE_fitness_func_iter_dim.txt
 	ofstream output_file("DE_fitness_func" + to_string(func_id) + "_iter" + to_string(iter) + "_dim" + to_string(dim) + ".txt", ios::out);
 	if (!output_file) {
@@ -115,4 +115,3 @@ void FileOutput(
 	avg_plot_file << "plot 'DE_fitness_avg_cvg" << to_string(func_id) << "_iter" << to_string(iter) << "_dim" << to_string(dim) << ".txt' with lines title 'Average Best Fitness'\n";
 	avg_plot_file.close();
 }
-#pragma once

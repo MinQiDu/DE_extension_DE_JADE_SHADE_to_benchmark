@@ -30,9 +30,6 @@
     <ClCompile Include="DE.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="LSHADE.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="benchmark.h">
@@ -54,12 +51,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="DE_fileoutput.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="LSHADE.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="LSHADE_fileoutput.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

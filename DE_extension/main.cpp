@@ -1,7 +1,6 @@
 #include "DE.h"
 #include "JADE.h"
 #include "SHADE.h"
-#include "LSHADE.h"
 #include <string>
 #include <iostream>
 

@@ -21,7 +21,7 @@ void algo_DE::RunALG(int _iter, int _dim, int _pop_size, double _CR, double _F, 
 	vector<double> best_fit_record; // 用於記錄每次運行的最佳 fitness
 	best_fit_record.reserve(run);
 	//iter_fit_record.resize(run);
-	eva_fit_record.resize(_iter * _pop_size); // 用於記錄每次運行的 evaluation fitness
+	eva_fit_record.resize(run); // 用於記錄每次運行的 evaluation fitness
 
 	for (int r = 0; r < run; ++r)
 	{
@@ -67,7 +67,7 @@ void algo_DE::RunALG(int _iter, int _dim, int _pop_size, double _CR, double _F, 
 	double avg_best_fit = accumulate(best_fit_record.begin(), best_fit_record.end(), 0.0) / run;
 	std::cout << "Avg Best fitness: " << avg_best_fit << endl;
 	// 輸出到檔案
-	FileOutput(
+	DE_FileOutput(
 		run,
 		best_fit_record,
 		eva_fit_record,

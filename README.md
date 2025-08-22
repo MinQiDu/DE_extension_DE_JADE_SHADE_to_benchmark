@@ -4,7 +4,7 @@
 
 - **Programming language:** C++
 - **Metaheuristic algorithm:** DE, JADE (Adaptive DE), SHADE (Success-History based parameter Adaptation for DE)
-- **Benchmark functions:** 13 standard functions from IEEE CEC (f1 \~ f13)
+- **Benchmark functions:** 13 standard functions from IEEE CEC2005 (f1 \~ f13)
 - **Visualization:** Gnuplot
 - **Configurable parameters:** iterations, dimension, population size, control parameters, archive on/off
 
@@ -154,7 +154,10 @@ DE_extension.exe iter dim pop_size mCR mF H p func_id archive_flag SHADE
 ### Compile
 
 ```bash
-Ctrl + Shift + B in VisualStudio 
+方法1 in VisualStudio : Ctrl + Shift + B 
+```
+```MSYS2
+方法2 in MSYS2 : g++ main.cpp DE.cpp JADE.cpp SHADE.cpp benchmark.cpp -o run.exe -std=c++11
 ```
 
 ### Run
@@ -162,22 +165,38 @@ Ctrl + Shift + B in VisualStudio
 
 ```bash
 // Run DE for function f6, 100 iterations, dim=30
-./DE_extension.exe 100 30 100 0.5 0.5 0.1 0.1 6 0 de
+./.exe 100 30 100 0.5 0.5 0.1 0.1 6 0 de
 
 // Run JADE for function f6, 100 iterations, dim=30, no archive
-./DE_extension.exe 100 30 100 0.5 0.5 0.1 0.1 6 0 jade 
+./.exe 100 30 100 0.5 0.5 0.1 0.1 6 0 jade 
 
 // Run SHADE for function f6, 100 iterations, dim=30, no archive
-./DE_extension.exe 100 30 100 0.5 0.5 100 0.05 6 0 shade
+./.exe 100 30 100 0.5 0.5 100 0.05 6 0 shade
 ```
 **Notice: You can click .bat files in folder docs to run jade.exe**
 
 ### Visualize
-
-```bash
-gnuplot plot_JADE_func6_iter100_dim30_archive_false.plt
-```
 **Generates PNG image of convergence plot.**
+```bash
+// generate plot of DE in function {func_id}, iter {iter}
+gnuplot plot_DE_func{fid}_iter{iter}_dim{dim}.plt
+
+// generate plot of JADE in function {func_id}, iter {iter}
+gnuplot plot_JADE_func{fid}_iter{iter}_dim{dim}_archive_{true|false}.plt
+
+// generate plot of SHADE in function {func_id}, iter {iter}
+gnuplot plot_SHADE_func{fid}_iter{iter}_dim{dim}_archive_{true|false}.plt
+```
+
+```
+// 當有以下文字紀錄:
+// `DE_fitness_avg_cvg{fid}_iter{iter}_dim{dim}.txt`
+// `JADE_fitness_avg_cvg{fid}_iter{iter}_dim{dim}_archive_{true|false}.txt`
+// `SHADE_fitness_avg_cvg{fid}_iter{iter}_dim{dim}_archive_{true|false}.txt`
+
+// generate comparison plot between DE, JADE, SHADE
+gnuplot plot_compare_func{fid}_iter{iter}_dim{dim}_archive_{true|false}.plt
+```
 
 ---
 

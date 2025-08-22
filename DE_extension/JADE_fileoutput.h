@@ -4,7 +4,7 @@
 #include <fstream>
 #include <iostream>
 
-void FileOutput(
+void JADE_FileOutput(
 	const int run,
 	const std::vector<double>& best_fit_record,
 	const std::vector<std::vector<double>>& eva_fit_record,
@@ -12,7 +12,7 @@ void FileOutput(
 	double _mCR, double _mF, double c, double p,
 	bool archive_flag, double avg_best_fit
 ) {
-	// ===== 在這裡填入你產生 .txt 的程式碼 =====
+	// ===== 產生 .txt 的程式碼 =====
 	// 輸出每 run 運行的最佳 fitness 到 JADE_fitness_func_iter_dim_archive_.txt
 	ofstream output_file("JADE_fitness_func" + to_string(func_id) + "_iter" + to_string(iter) + "_dim" + to_string(dim) + "_archive_" + (archive_flag ? "true" : "false") + ".txt", ios::out);
 	if (!output_file) {
@@ -118,4 +118,3 @@ void FileOutput(
 	avg_plot_file << "plot 'JADE_fitness_avg_cvg" << to_string(func_id) << "_iter" << to_string(iter) << "_dim" << to_string(dim) << "_archive_" << (archive_flag ? "true" : "false") << ".txt' with lines title 'Average Best Fitness'\n";
 	avg_plot_file.close();
 }
-#pragma once
