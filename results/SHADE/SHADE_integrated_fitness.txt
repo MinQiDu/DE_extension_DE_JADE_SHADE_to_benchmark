@@ -1,42 +1,44 @@
+SHADE | func_id = 8| iter = 1000 | dim = 30 | pop_size = 100 | mCR = 0.5 | mF = 0.5 | MCR & MF size = 100 | p = 0.05 | w/o archive list = true
+Avg Best fitness: 7.80978
 SHADE | func_id = 1| iter = 1500 | dim = 30 | pop_size = 100 | mCR = 0.5 | mF = 0.5 | MCR & MF size = 100 | p = 0.05 | w/o archive list = true
-Avg Best fitness: 2.64194e-76
+Avg Best fitness: 8.10652e-76
 SHADE | func_id = 2| iter = 2000 | dim = 30 | pop_size = 100 | mCR = 0.5 | mF = 0.5 | MCR & MF size = 100 | p = 0.05 | w/o archive list = true
-Avg Best fitness: 3.58466e-52
+Avg Best fitness: 5.65424e-52
 SHADE | func_id = 3| iter = 5000 | dim = 30 | pop_size = 100 | mCR = 0.5 | mF = 0.5 | MCR & MF size = 100 | p = 0.05 | w/o archive list = true
-Avg Best fitness: 1.27133e-79
+Avg Best fitness: 1.22581e-79
 SHADE | func_id = 4| iter = 5000 | dim = 30 | pop_size = 100 | mCR = 0.5 | mF = 0.5 | MCR & MF size = 100 | p = 0.05 | w/o archive list = true
-Avg Best fitness: 7.87808e-52
+Avg Best fitness: 3.7414e-53
 SHADE | func_id = 5| iter = 3000 | dim = 30 | pop_size = 100 | mCR = 0.5 | mF = 0.5 | MCR & MF size = 100 | p = 0.05 | w/o archive list = true
-Avg Best fitness: 0
+Avg Best fitness: 0.0797325
 SHADE | func_id = 5| iter = 20000 | dim = 30 | pop_size = 100 | mCR = 0.5 | mF = 0.5 | MCR & MF size = 100 | p = 0.05 | w/o archive list = true
 Avg Best fitness: 0.159465
 SHADE | func_id = 6| iter = 100 | dim = 30 | pop_size = 100 | mCR = 0.5 | mF = 0.5 | MCR & MF size = 100 | p = 0.05 | w/o archive list = true
-Avg Best fitness: 2.72
+Avg Best fitness: 2.98
 SHADE | func_id = 6| iter = 1500 | dim = 30 | pop_size = 100 | mCR = 0.5 | mF = 0.5 | MCR & MF size = 100 | p = 0.05 | w/o archive list = true
 Avg Best fitness: 0
 SHADE | func_id = 7| iter = 3000 | dim = 30 | pop_size = 100 | mCR = 0.5 | mF = 0.5 | MCR & MF size = 100 | p = 0.05 | w/o archive list = true
-Avg Best fitness: 0.000653682
+Avg Best fitness: 0.000642043
 SHADE | func_id = 8| iter = 1000 | dim = 30 | pop_size = 100 | mCR = 0.5 | mF = 0.5 | MCR & MF size = 100 | p = 0.2 | w/o archive list = true
-Avg Best fitness: 9.65775
+Avg Best fitness: 7.30701
 SHADE | func_id = 8| iter = 9000 | dim = 30 | pop_size = 100 | mCR = 0.5 | mF = 0.5 | MCR & MF size = 100 | p = 0.2 | w/o archive list = true
-Avg Best fitness: 4.73753
+Avg Best fitness: 0.066439
 SHADE | func_id = 9| iter = 1000 | dim = 30 | pop_size = 100 | mCR = 0.5 | mF = 0.5 | MCR & MF size = 100 | p = 0.05 | w/o archive list = true
-Avg Best fitness: 3.23178
+Avg Best fitness: 3.33107
 SHADE | func_id = 9| iter = 5000 | dim = 30 | pop_size = 100 | mCR = 0.5 | mF = 0.5 | MCR & MF size = 100 | p = 0.05 | w/o archive list = true
 Avg Best fitness: 0
 SHADE | func_id = 10| iter = 500 | dim = 30 | pop_size = 100 | mCR = 0.5 | mF = 0.5 | MCR & MF size = 100 | p = 0.05 | w/o archive list = true
-Avg Best fitness: 5.8113e-11
+Avg Best fitness: 6.04529e-11
 SHADE | func_id = 10| iter = 2000 | dim = 30 | pop_size = 100 | mCR = 0.5 | mF = 0.5 | MCR & MF size = 100 | p = 0.05 | w/o archive list = true
 Avg Best fitness: 3.9968e-15
 SHADE | func_id = 11| iter = 500 | dim = 30 | pop_size = 100 | mCR = 0.5 | mF = 0.5 | MCR & MF size = 100 | p = 0.05 | w/o archive list = true
-Avg Best fitness: 0.000197146
+Avg Best fitness: 0.000147921
 SHADE | func_id = 11| iter = 3000 | dim = 30 | pop_size = 100 | mCR = 0.5 | mF = 0.5 | MCR & MF size = 100 | p = 0.05 | w/o archive list = true
 Avg Best fitness: 0
 SHADE | func_id = 12| iter = 500 | dim = 30 | pop_size = 100 | mCR = 0.5 | mF = 0.5 | MCR & MF size = 100 | p = 0.05 | w/o archive list = true
-Avg Best fitness: 3.18645e-20
+Avg Best fitness: 2.57057e-20
 SHADE | func_id = 12| iter = 1500 | dim = 30 | pop_size = 100 | mCR = 0.5 | mF = 0.5 | MCR & MF size = 100 | p = 0.05 | w/o archive list = true
 Avg Best fitness: 1.57054e-32
 SHADE | func_id = 13| iter = 500 | dim = 30 | pop_size = 100 | mCR = 0.5 | mF = 0.5 | MCR & MF size = 100 | p = 0.05 | w/o archive list = true
-Avg Best fitness: 4.24092e-19
+Avg Best fitness: 5.79501e-19
 SHADE | func_id = 13| iter = 1500 | dim = 30 | pop_size = 100 | mCR = 0.5 | mF = 0.5 | MCR & MF size = 100 | p = 0.05 | w/o archive list = true
 Avg Best fitness: 1.34978e-32

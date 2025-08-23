@@ -1,0 +1,84 @@
+DE | func_id = 1| iter = 1500 | dim = 30 | pop_size = 100 | CR = 0.5 | F = 0.5
+Avg Best fitness: 4.27684e-16
+DE | func_id = 2| iter = 2000 | dim = 30 | pop_size = 100 | CR = 0.5 | F = 0.5
+Avg Best fitness: 1.82109e-13
+DE | func_id = 3| iter = 5000 | dim = 30 | pop_size = 100 | CR = 0.5 | F = 0.5
+Avg Best fitness: 11030
+DE | func_id = 4| iter = 5000 | dim = 30 | pop_size = 100 | CR = 0.5 | F = 0.5
+Avg Best fitness: 5.26842e-07
+DE | func_id = 5| iter = 3000 | dim = 30 | pop_size = 100 | CR = 0.5 | F = 0.5
+Avg Best fitness: 19.2304
+DE | func_id = 5| iter = 20000 | dim = 30 | pop_size = 100 | CR = 0.5 | F = 0.5
+Avg Best fitness: 3.37618e-08
+DE | func_id = 6| iter = 100 | dim = 30 | pop_size = 100 | CR = 0.5 | F = 0.5
+Avg Best fitness: 2843.12
+DE | func_id = 6| iter = 1500 | dim = 30 | pop_size = 100 | CR = 0.5 | F = 0.5
+Avg Best fitness: 0
+DE | func_id = 7| iter = 3000 | dim = 30 | pop_size = 100 | CR = 0.5 | F = 0.5
+Avg Best fitness: 0.00712275
+DE | func_id = 8| iter = 1000 | dim = 30 | pop_size = 100 | CR = 0.5 | F = 0.5
+Avg Best fitness: 4611.69
+DE | func_id = 8| iter = 9000 | dim = 30 | pop_size = 100 | CR = 0.5 | F = 0.5
+Avg Best fitness: 3414.41
+DE | func_id = 9| iter = 1000 | dim = 30 | pop_size = 100 | CR = 0.5 | F = 0.5
+Avg Best fitness: 131.523
+DE | func_id = 9| iter = 5000 | dim = 30 | pop_size = 100 | CR = 0.5 | F = 0.5
+Avg Best fitness: 93.4939
+DE | func_id = 10| iter = 500 | dim = 30 | pop_size = 100 | CR = 0.5 | F = 0.5
+Avg Best fitness: 0.0357
+DE | func_id = 10| iter = 2000 | dim = 30 | pop_size = 100 | CR = 0.5 | F = 0.5
+Avg Best fitness: 2.69731e-12
+DE | func_id = 11| iter = 500 | dim = 30 | pop_size = 100 | CR = 0.5 | F = 0.5
+Avg Best fitness: 0.090371
+DE | func_id = 11| iter = 3000 | dim = 30 | pop_size = 100 | CR = 0.5 | F = 0.5
+Avg Best fitness: 0
+DE | func_id = 12| iter = 500 | dim = 30 | pop_size = 100 | CR = 0.5 | F = 0.5
+Avg Best fitness: 0.0326434
+DE | func_id = 12| iter = 1500 | dim = 30 | pop_size = 100 | CR = 0.5 | F = 0.5
+Avg Best fitness: 7.32679e-16
+DE | func_id = 13| iter = 500 | dim = 30 | pop_size = 100 | CR = 0.5 | F = 0.5
+Avg Best fitness: 0.0855013
+DE | func_id = 13| iter = 1500 | dim = 30 | pop_size = 100 | CR = 0.5 | F = 0.5
+Avg Best fitness: 2.57627e-15
+DE | func_id = 1| iter = 1500 | dim = 30 | pop_size = 100 | CR = 0.5 | F = 0.5
+Avg Best fitness: 2.90463e-16
+DE | func_id = 2| iter = 2000 | dim = 30 | pop_size = 100 | CR = 0.5 | F = 0.5
+Avg Best fitness: 1.08327e-13
+DE | func_id = 3| iter = 5000 | dim = 30 | pop_size = 100 | CR = 0.5 | F = 0.5
+Avg Best fitness: 7288.41
+DE | func_id = 4| iter = 5000 | dim = 30 | pop_size = 100 | CR = 0.5 | F = 0.5
+Avg Best fitness: 4.73665e-07
+DE | func_id = 5| iter = 3000 | dim = 30 | pop_size = 100 | CR = 0.5 | F = 0.5
+Avg Best fitness: 19.1863
+DE | func_id = 5| iter = 20000 | dim = 30 | pop_size = 100 | CR = 0.5 | F = 0.5
+Avg Best fitness: 3.07426e-08
+DE | func_id = 6| iter = 100 | dim = 30 | pop_size = 100 | CR = 0.5 | F = 0.5
+Avg Best fitness: 2114.65
+DE | func_id = 6| iter = 1500 | dim = 30 | pop_size = 100 | CR = 0.5 | F = 0.5
+Avg Best fitness: 0
+DE | func_id = 7| iter = 3000 | dim = 30 | pop_size = 100 | CR = 0.5 | F = 0.5
+Avg Best fitness: 0.00730014
+DE | func_id = 8| iter = 1000 | dim = 30 | pop_size = 100 | CR = 0.5 | F = 0.5
+Avg Best fitness: 2350.26
+DE | func_id = 8| iter = 9000 | dim = 30 | pop_size = 100 | CR = 0.5 | F = 0.5
+Avg Best fitness: 790.16
+DE | func_id = 9| iter = 1000 | dim = 30 | pop_size = 100 | CR = 0.5 | F = 0.5
+Avg Best fitness: 131.367
+DE | func_id = 9| iter = 5000 | dim = 30 | pop_size = 100 | CR = 0.5 | F = 0.5
+Avg Best fitness: 93.2947
+DE | func_id = 10| iter = 500 | dim = 30 | pop_size = 100 | CR = 0.5 | F = 0.5
+Avg Best fitness: 0.0276347
+DE | func_id = 10| iter = 2000 | dim = 30 | pop_size = 100 | CR = 0.5 | F = 0.5
+Avg Best fitness: 2.01643e-12
+DE | func_id = 11| iter = 500 | dim = 30 | pop_size = 100 | CR = 0.5 | F = 0.5
+Avg Best fitness: 0.058573
+DE | func_id = 11| iter = 3000 | dim = 30 | pop_size = 100 | CR = 0.5 | F = 0.5
+Avg Best fitness: 0
+DE | func_id = 12| iter = 500 | dim = 30 | pop_size = 100 | CR = 0.5 | F = 0.5
+Avg Best fitness: 0.014391
+DE | func_id = 12| iter = 1500 | dim = 30 | pop_size = 100 | CR = 0.5 | F = 0.5
+Avg Best fitness: 4.83961e-16
+DE | func_id = 13| iter = 500 | dim = 30 | pop_size = 100 | CR = 0.5 | F = 0.5
+Avg Best fitness: 0.0529975
+DE | func_id = 13| iter = 1500 | dim = 30 | pop_size = 100 | CR = 0.5 | F = 0.5
+Avg Best fitness: 1.43932e-15
