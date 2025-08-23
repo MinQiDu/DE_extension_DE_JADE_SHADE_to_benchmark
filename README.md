@@ -203,13 +203,14 @@ gnuplot plot_compare_func{fid}_iter{iter}_dim{dim}_archive_{true|false}.plt
 ## ( VI ) File Structure
 
 ```
-DE_extension_Benchmark/
-├── main.cpp
-├── DE.cpp / DE.h
-├── JADE.cpp / JADE.h
-├── SHADE.cpp / SHADE.h
-├── Benchmark.cpp / Benchmark.h
-├── DE_fileoutput.h / JADE_fileoutput.h / SHADE_fileoutput.h
+DE_extension_to_CEC2005/
+├── DE_extension_to_CEC2005
+│   ├── main.cpp
+│   ├── DE.cpp / DE.h
+│   ├── JADE.cpp / JADE.h
+│   ├── SHADE.cpp / SHADE.h
+│   ├── Benchmark.cpp / Benchmark.h
+│   └── DE_fileoutput.h / JADE_fileoutput.h / SHADE_fileoutput.h
 ├── results/ ← output files (.txt, .png)
 │   ├── DE
 │   │  ├── DE_integrated_fitness.txt
@@ -229,14 +230,15 @@ DE_extension_Benchmark/
 │   │  ├── SHADE_fitness_avg_cvg*.txt
 │   │  ├── SHADE_cvg_plot*.png
 │   │  └── plot_SHADE*.plt
-│   ├── Compare
-│   │  └── compare_avg_cvg_plot_func1~13_iter_dim_archive.png ← convergence curves comparison (DE, JADE, SHADE)
+│   └── Compare
+│      ├── plot_compare_func{fid}_iter{iter}_dim{dim}_archive_{true|false}.plt
+│      └── compare_avg_cvg_plot_func{fid}_iter{iter}_dim{dim}_archive_{true|false}.png ← convergence curves comparison of DE, JADE, SHADE and LSHADE
 ├── docs/
 │   ├── run_de_dim30.bat
 │   ├── run_jade_dim30_archive_false.bat
 │   ├── run_jade_dim30_archive_true.bat
 │   └── run_shade_dim30_archive_true.bat
-├── DE_extension_ExperimentResults.xlsx ← table of results comparison (DE, JADE, SHADE)
+├── DE_extension_ExperimentResults.xlsx ← comparison results of DE, JADE, SHADE and LSHADE
 └── README.md
 ```
 
