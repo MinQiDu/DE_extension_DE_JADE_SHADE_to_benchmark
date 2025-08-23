@@ -230,12 +230,13 @@ DE_extension_Benchmark/
 │   │  ├── SHADE_cvg_plot*.png
 │   │  └── plot_SHADE*.plt
 │   ├── Compare
-│   │  └── compare_avg_cvg_plot_func1~13_iter_dim_archive.png
+│   │  └── compare_avg_cvg_plot_func1~13_iter_dim_archive.png ← convergence curves comparison (DE, JADE, SHADE)
 ├── docs/
 │   ├── run_de_dim30.bat
 │   ├── run_jade_dim30_archive_false.bat
 │   ├── run_jade_dim30_archive_true.bat
 │   └── run_shade_dim30_archive_true.bat
+├── DE_extension_ExperimentResults.xlsx ← table of results comparison (DE, JADE, SHADE)
 └── README.md
 ```
 
